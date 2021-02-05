@@ -24,6 +24,32 @@ describe("HeroesComponent", () => {
         // aserte
         expect(heroesComponent.heroes[2]).toBeUndefined();
 
-    })
+    });
+    it("deletHero in collborate class is called", () => {
+        // acte
+        let deletedHero = mockHoresService.deleteHero;
+        // aserte
+        expect(deletedHero).toHaveBeenCalled();
+
+    });
+    it("deletHero in colaborate class is called", () => {
+        // arange
+        // heroesComponent.heroes = HEROES;
+        // acte
+        let deletedHero = mockHoresService.deleteHero;
+        // aserte
+        expect(deletedHero).toHaveBeenCalled();
+
+    });
+    it("deletHero in colaborate class is called with a good param", () => {
+        // arange
+        // heroesComponent.heroes = HEROES;
+        // acte
+        let deletedHero = mockHoresService.deleteHero;
+        // aserte
+        expect(deletedHero).toHaveBeenCalledWith(HEROES[2]);
+
+    });
+
 
 })
