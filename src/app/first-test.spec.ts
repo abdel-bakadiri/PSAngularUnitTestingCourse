@@ -1,14 +1,15 @@
-describe('my first test', () => {
-    let sut;
+describe("Test year if equal to 2021 ", () => {
+    let year;
+
     beforeEach(() => {
-        sut = {};
-    });
-    it(" Should be true if it's true", () => {
-        // arrange
-        sut.a = false;
+        year = null;
+    })
+    it("Should be equal to 2021", () => {
+        //arrange
+        year = 1999;
         //acte
-        sut.a = true;
-        //aserte
-        expect(sut.a).toBe(true);
+        year = 2021;
+        // assert
+        expect(year).toBe(2021);
     })
 })
